@@ -1,4 +1,4 @@
-Launcher:MultiMC
+MultiMC is recommended
 
 
 Find the client in the release.
