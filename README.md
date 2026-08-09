@@ -67,7 +67,7 @@ This repository contains the configuration, optimization logs, and custom setup 
 
 <a name="chinese"></a>
 ## 中文
-
+(机翻)
 ### 一、 写在前面
 当你看到这个项目时，我已经卸载了 QQ 和 Discord，将电脑上所有与学习无关的文件转存到了移动硬盘，并交由父母妥善保管。今天是 2026 年 8 月 9 日，距离 2027 年 6 月的高考还有不到 10 个月的时间。时间飞逝，高中生活即将迎来尾声 QwQ。
 
