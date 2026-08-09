@@ -1,5 +1,6 @@
 Status: Frozen until Jun 2027
 (The server will remain up and running during this period)
+这个服务器仍然运行，你可以随时进来
 
 [English](#english) | [中文](#chinese)
 
@@ -58,6 +59,7 @@ This repository contains the configuration, optimization logs, and custom setup 
 ### V. Community & Resources
 * All modified plugin configuration files, Linux/Ubuntu deployment scripts, and server parameters are archived in the `#opensource` channel on our Discord server.
 * If you encounter any bugs or have technical feedback while inspecting these configs, please feel free to **open an Issue** in this repository.
+* Discord:https://discord.gg/8urjC42jE3
 
 *Thank YOOOOU!! See you all in June 2027!*
 
@@ -116,5 +118,7 @@ This repository contains the configuration, optimization logs, and custom setup 
 ### 五、 社区与资源
 * 所有修改后的插件配置文件、Ubuntu 部署脚本及运维参数均已归档至 Discord 服务器的 `#opensource` 频道。
 * 若您在参考或使用相关配置时遇到任何技术 Bug，欢迎在此 GitHub 存储库中提交 **Issue**。
+* * Discord:https://discord.gg/8urjC42jE3
+  * QQ:316834843
 
 *非常感谢大家！2027 年 6 月，我们高处相见！*
