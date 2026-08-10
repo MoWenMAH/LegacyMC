@@ -9,116 +9,129 @@ Status: Frozen until Jun 2027
 <a name="english"></a>
 ## English
 
-### I. Foreword
-By the time you see this project, I will have already uninstalled QQ and Discord, transferred all non-study-related files on my computer to an external hard drive, and handed it over to my parents for safekeeping. Today is August 9, 2026, with less than 10 months to go before the Gaokao (June 2027). Time is flying by so fast—my high school days are coming to an end soon QwQ.
+### I. Nonsense
+By the time you see this project, I will have already uninstalled QQ and Discord, transferred all non-study-related files on my computer to an external hard drive, and handed it over to my dad for safekeeping. Today is August 9, 2026, with less than 10 months to go before the Gaokao (June 5, 2027). Time is flying by so fast. My high school days are coming to an end soon—it makes me so sad QwQ.
 
-*(For those unfamiliar with the Gaokao, you can think of it as an SAT taken by over 10 million students nationwide. The New York Times wasn't exaggerating when describing it as "thousands of troops crossing a single-log bridge". The Gaokao is immensely important to me—it not only determines my university admission, but also defines the future path for myself and my family. Plus, I only get one shot at this.)*
+(For those unfamiliar with the Gaokao, you can think of it as an SAT taken by over 600,000 students, the New York Times wasn't exaggerating when it described it as 'thousands of troops crossing a single-log bridge. XD The Gaokao is immensely important to me—it not only determines whether I can get into a top-tier university, but also defines the future of both myself and my family. Plus, for me, I only get one shot at this.)
 
-There is no need to elaborate further on its importance, which is why I must put everything else on hold for the next 10 months to focus entirely on preparation. I have pushed all my projects (including this one) to GitHub so I can pick them right back up after June 10, 2027.
+There's no need to elaborate on how critical and important it is, which is why I must put everything else on hold for the next 10 months to focus entirely on prep.
+I've temporarily pushed all my projects to GitHub (including this one) so I can pick them back up after the Gaokao is over, starting after June 10, 2027.
 
 ### II. Introduction
-This repository contains the configuration, optimization logs, and custom setup for a **Minecraft Beta 1.7.3** modded server with custom Bukkit plugins and backported mods.
+This is a Minecraft Beta 1.7.3 modded server with custom plugins.
 
 ### III. Development Timeline
-*(I will edit these experiences into a dev-log documentary and post it to YouTube after the Gaokao.)*
+*(I will edit these experiences into a video and post it to YouTube after the Gaokao)*
 
-* **2022**: Built custom modpacks for Beta 1.7.3, gathered resources, networking setup, and technical experience. This served as the client foundation for the project.
-* **July – August 2024**: Focused on server-side setup. Sourced the `CraftBukkit #1060` core from GitHub, downloaded Bukkit backports for IC2 and BuildCraft along with their prerequisites (`ModLoaderMP`, `Forge for Bukkit`) from MCArchive. Integrated mods into the core and successfully launched it.
-  * *Technical Hurdle*: The vanilla Bukkit core was resistant to direct modification. Deleting `META-INF` or putting mod `.zip` files directly into `/mods` threw severe errors—it acted like a completely locked-down JAR until properly patched with Forge/ModLoaderMP dependencies.
-* **July – August 2025**:
-  * *July*: Analyzed required plugins via BukkitDev, debugged dependency issues, and installed several backported IC2 add-ons.
-  * *August 2*: Official Open Beta release (**Ver 1.0.0**).
-* **February – June 2026**: Continuous feature iterations, bug fixes, and environment stabilization (see Changelog below).
+- **(1) 2022**: Created custom modpacks for Beta 1.7.3 (see Fig. 1) and gathered resources, network and experience. This later evolved into the client for this project.
+- **(2) July to August 2024**: Focused on server-side development. Got bukkit1060 core from GitHub, downloaded IC2 and BC backport for bukkit along with their prerequisites (ModloaderMP, Forge for bukkit) from mcarchive.org. Installed mods to the core and successfully launched it. (However, the server core wouldn't accept any config file tweaks. Deleting META-INF caused errors, and putting mods' .zip files into the mods folder also threw errors—the core was virtually impenetrable, acting like a completely locked-down jar.)
+- **(3) 2025**:
+  - **1. July**:
+    - ① Analyzed the plugins needed for the server (Fig. 2) and got them from bukkit.org. Studied the guides left by each authors and debugged the individual plugins.
+    - ② Installed several backported add-ons for IC2. (Ver 1.0.0)
+  - **2. August 2**: Launched open beta.
+- **(4) 2026**: *(Subsequent updates mostly focused on feature additions and bug fixes. For detailed changes, please refer to #dev-log)*
+  - **1. February**:
+    - ① Ver 1.1.0 (Since I couldn't find the Randman plugin (which relies on WorldBorder) back in July 2025, I had to generate random coordinates in 'the World' and use the Multiverse-Portals plugin to link 'the Lobby' to those coordinates to simulate random teleportation.)
+    - ② Ver 1.1.1
+  - **2. March**: Ver 1.2.0
+  - **3. April**: Ver 1.2.1
+  - **4. Jun 27**: Ver 1.2.2
 
-### IV. Dev-Log & Changelog
+### IV. Dev-log
+- **Ver 0.0.0 | Jul - Aug 2024**
+  - Set up CraftBukkit #1060 core (GitHub) and IC2, BC Bukkit backport (MCArchive.com).
+- **Ver 1.0.0 | Aug 2, 2025**
+  - 1. Started open beta
+- **Ver 1.1.0 | February, 2026**
+  - 1. Changed the Lobby. (Link: https://www.planetminecraft.com/project/castle-38/)
+  - 2. Combined the Lobby with the World.
+  - 3. Created a new world named "Skyland".
+  - 4. Added Randman (Based on Worldborder) plugin for random world teleportation.
+- **Ver 1.1.1 | February, 2026**
+  - 1. Fixed a NoSuchMethodError triggered by snow melting
+  - 2. Fixed an issue preventing OP from entering the Nether.
+- **Ver 1.2.0 | March 2026**
+  - 1. Removed 'the Skyland'.
+  - 2. Added the iConomy plugin and built a shop.
+  - 3. Creating a Residence plot now costs money.
+- **Ver 1.2.1 | April 2026**
+  - 1. Adjusted a WorldBorder configuration setting (timer-delay-ticks:) to achieve true random teleportation.
+  - 2. Updated shop inventory.
+- **Ver 1.2.2 | June 27, 2026**
+  - 1. Installed two mods: IC2 Thermometer Port & Iron Chests Port.
+- **Ver 1.2.3**
+  - 1. Removed Multiverse and fixed the Nether access issues.
 
-* **Ver 0.0.0** | *Jul – Aug 2024*
-  * Configured `CraftBukkit #1060` core with IC2 & BuildCraft Bukkit backports.
-* **Ver 1.0.0** | *Aug 2, 2025*
-  * Launched Open Beta.
-* **Ver 1.1.0** | *Feb 2026*
-  * Redesigned Lobby architecture (Credit: [PMC Castle 38](https://www.planetminecraft.com/project/castle-38/)).
-  * Merged Lobby into the main survival world.
-  * Created a custom dimension world "Skyland".
-  * Integrated `Randman` (WorldBorder-based) plugin for random wild teleportation.
-* **Ver 1.1.1** | *Feb 2026*
-  * Fixed a `NoSuchMethodError` triggered by snow melting mechanics.
-  * Fixed an issue preventing OP players from entering the Nether.
-* **Ver 1.2.0** | *Mar 2026*
-  * Deprecated and removed "Skyland".
-  * Integrated `iConomy` plugin and constructed server shop.
-  * Set a currency cost for creating `Residence` claims.
-* **Ver 1.2.1** | *Apr 2026*
-  * Adjusted WorldBorder `timer-delay-ticks` configuration to achieve true random teleportation.
-  * Updated server shop inventory and pricing.
-* **Ver 1.2.2** | *Jun 27, 2026*
-  * Installed backported mods: `IC2 Thermometer Port` & `Iron Chests Port`.
-* **Ver 1.2.3** | *Aug 2026*
-  * Removed `Multiverse-Core` dependency to resolve underlying Nether transit bugs.
+### V. Community
+All modified plugin configurations and Ubuntu commands are available in the #opensource channel on our Discord server.
 
-### V. Community & Resources
-* All modified plugin configuration files, Linux/Ubuntu deployment scripts, and server parameters are archived in the `#opensource` channel on our Discord server.
-* If you encounter any bugs or have technical feedback while inspecting these configs, please feel free to **open an Issue** in this repository.
-* Discord:https://discord.gg/8urjC42jE3
+If you encounter any bugs or have feedback while playing, please open an issue in this repository.
 
-*Thank YOOOOU!! See you all in June 2027!*
+Thank YOOOOU!!
 
 ---
 
 <a name="chinese"></a>
 ## 中文
-(机翻)
-### 一、 写在前面
-当你看到这个项目时，我已经卸载了 QQ 和 Discord，将电脑上所有与学习无关的文件转存到了移动硬盘，并交由父母妥善保管。今天是 2026 年 8 月 9 日，距离 2027 年 6 月的高考还有不到 10 个月的时间。时间飞逝，高中生活即将迎来尾声 QwQ。
 
-高考对我而言至关重要——它不仅决定了我能否进入理想的大学，也关乎我与家庭的未来发展。对我来说，这是一场只有一次机会的硬仗。
+### 一、废话
+当你看到这个项目时，我已经卸载了QQ和Discord，将计算机上所有与学习无关的文件传输到外部硬盘，并将其交给父母妥善保管。今天是2026年8月9日，离高考还有不到10个月的时间（2027年6月5日）。时间过得真快。我的高中生活很快就要结束了，这让我很伤心 QwQ。
 
-无须多言它的关键性，因此在接下来的 10 个月里，我必须暂停一切娱乐与技术折腾，全情投入备考。我已将包括本项目在内的所有开源内容推送到 GitHub 存档，以便在 2027 年 6 月 10 日高考结束后重新解冻并继续开发。
+（对于不了解高考的人，你可以把它想象成超过600万学生参加的SAT，纽约时报把它描述为“千军万马过独木桥”一点也不夸张。XD 高考对我来说非常重要——它不仅决定了我能否进入顶尖大学，也决定了我自己和家庭的未来。此外，对我来说，我只有这一次机会。）
 
-### 二、 项目简介
-本项目为一个基于 **Minecraft Beta 1.7.3** 的硬核 Mod/插件混合服务端架构存档，包含自定义 Bukkit 插件调试、老版本 Mod Backport（逆向移植）及底层性能优化配置。
+没有必要详细说明它是多么的关键和重要，这就是为什么我必须在接下来的10个月里暂停所有其他事情，以完全专注于备考。
+我已经暂时将我的所有项目推送到GitHub（包括这一个），以便在高考结束后（2027年6月10日之后）重新开始。
 
-### 三、 开发时间线
-*(高考结束后，我计划将这段时间的开发经历剪辑成一部纪录片/开发日志发布到 YouTube。)*
+### 二、简介
+这是一个带有自定义插件的 Minecraft Beta 1.7.3 Mod服务器。
 
-* **2022 年**：制作 Beta 1.7.3 客户端整合包，积累资源、网络配置及技术经验，为本项目客户端奠定基础。
-* **2024 年 7 月 – 8 月**：专注于服务端核心构建。从 GitHub 获取 `CraftBukkit #1060` 核心，并从 MCArchive 匹配 IC2、BuildCraft 的 Bukkit Backport 版本及其前置（`ModLoaderMP`、`Forge for Bukkit`）。成功完成 Mod 与核心的整合并启动。
-  * *技术踩坑*：原始 Bukkit 核心对外部修改非常敏感，直接删除 `META-INF` 或将 Mod 压缩包放入 `/mods` 文件夹均会抛出严重异常，必须通过正确的 Forge/ModLoaderMP 依赖层进行修补。
-* **2025 年 7 月 – 8 月**：
-  * *7 月*：筛选 Bukkit 插件，排查依赖冲突，完成各插件的单独调试与 IC2 扩展移植。
-  * *8 月 2 日*：服务器正式开启 Open Beta 测试（**Ver 1.0.0**）。
-* **2026 年 2 月 – 6 月**：持续进行功能迭代、底层 Bug 修复与配置优化（详见下方更新日志）。
+### 三、发展时间表
+*(我将把这些经历编辑成视频，并在高考结束后发布到YouTube)*
 
-### 四、 开发日志 (Dev-Log)
+- **（1）2022年**：为 Beta 1.7.3 创建自定义 Mod包（见图1），并收集资源、网络和经验。这后来演变为该项目的客户端。
+- **（2）2024年7月至8月**：专注于服务器端开发。从GitHub获得 bukkit1060 内核，从 mcarchive.org 下载了 bukkit 的 IC2 和 BC backport 及其先决条件（ModLoaderMP，Forge for bukkit）。将 Mod 安装到核心并成功启动。（然而，服务器核心不会接受任何配置文件调整。删除 META-INF 会导致错误，将 Mod 的 .zip 文件放入 mods 文件夹也会引发错误——核心几乎无法穿透，就像一个完全锁定的 jar。）
+- **（3）2025年**：
+  - **1. 7月**：
+    - ① 分析服务器所需的插件（图2），并从 bukkit.org 获得它们。研究每个作者留下的指南，并调试各个插件。
+    - ② 为 IC2 安装了几个移植版附加模组。（版本1.0.0）
+  - **2. 8月2日**：发布开放测试版。
+- **（4）2026年**：*(后续更新主要关注功能添加和错误修复。有关详细更改，请参阅#开发日志)*
+  - **1. 2月**：
+    - ① 1.1.0版（因为我在2025年7月找不到 Randman 插件（它依赖于 WorldBorder），所以我不得不在“世界”中生成随机坐标，并使用 Multiverse-Portals 插件将“大厅”链接到这些坐标，以模拟随机传送。）
+    - ② 版本1.1.1
+  - **2. 3月**：1.2.0版
+  - **3. 4月**：1.2.1版
+  - **4. 6月27日**：1.2.2版
 
-* **Ver 0.0.0** | *2024年7月 – 8月*
-  * 构建 `CraftBukkit #1060` 核心及 IC2、BuildCraft 移植版环境。
-* **Ver 1.0.0** | *2025年8月2日*
-  * 开启 Open Beta 公测。
-* **Ver 1.1.0** | *2026年2月*
-  * 更换主城架构（主城建筑参考：[PMC Castle 38](https://www.planetminecraft.com/project/castle-38/)）。
-  * 将主城世界与主生存世界进行无缝合并。
-  * 新建“Skyland（天空之城）”自定义维度。
-  * 引入基于 WorldBorder 的 `Randman` 随机传送插件。
-* **Ver 1.1.1** | *2026年2月*
-  * 修复积雪融化时抛出的 `NoSuchMethodError` 异常。
-  * 修复 OP 权限玩家无法正常进入地狱（Nether）的 Bug。
-* **Ver 1.2.0** | *2026年3月*
-  * 移除“Skyland”维度以简化架构。
-  * 引入 `iConomy` 经济系统并搭建服务器商店。
-  * 设定 `Residence` 领地创建消耗游戏币。
-* **Ver 1.2.1** | *2026年4月*
-  * 调整 WorldBorder 的 `timer-delay-ticks` 配置参数，实现真正的无卡顿随机传送。
-  * 更新商店售卖物品列表及定价。
-* **Ver 1.2.2** | *2026年6月27日*
-  * 移植并安装两大 Mod：`IC2 Thermometer Port` 与 `Iron Chests Port`（更多箱子）。
-* **Ver 1.2.3** | *2026年8月*
-  * 移除 `Multiverse-Core` 多世界插件，彻底解决地狱传送门响应异常问题。
+### 四、开发日志
+- **Ver 0.0.0 | 2024年7月-8月**
+  - 设置 CraftBukkit #1060 核心（GitHub）和 IC2、BC Bukkit 移植版（MCArchive.com）。
+- **1.0.0版 | 2025年8月2日**
+  - 1. 开始开放测试版
+- **Ver 1.1.0 | 2026年2月**
+  - 1. 更改大厅。（链接：https://www.planetminecraft.com/project/castle-38/）
+  - 2. 大厅与世界相结合。
+  - 3. 创造了一个名为“Skyland”的新世界。
+  - 4. 增加了 Randman（基于 WorldBorder）插件，用于随机世界传送。
+- **Ver 1.1.1 | 2026年2月**
+  - 1. 修复了融雪触发的 NoSuchMethodError
+  - 2. 修复了一个阻止 OP 进入下界（Nether）的问题。
+- **1.2.0版 | 2026年3月**
+  - 1. 删除“Skyland”。
+  - 2. 添加了 iConomy 插件，并建立了一个商店。
+  - 3. 创建 Residence 领地地块现在需要花钱。
+- **1.2.1版 | 2026年4月**
+  - 1. 调整了 WorldBorder 配置设置（timer-delay-ticks:），以实现真正的随机传送。
+  - 2. 更新商店库存。
+- **1.2.2版 | 2026年6月27日**
+  - 1. 安装了两个 Mod：IC2 Thermometer Port 和 Iron Chests Port。
+- **Ver 1.2.3**
+  - 1. 删除了 Multiverse 并修复了下界（Nether）访问问题。
 
-### 五、 社区与资源
-* 所有修改后的插件配置文件、Ubuntu 部署脚本及运维参数均已归档至 Discord 服务器的 `#opensource` 频道。
-* 若您在参考或使用相关配置时遇到任何技术 Bug，欢迎在此 GitHub 存储库中提交 **Issue**。
-* * Discord:https://discord.gg/8urjC42jE3
-  * QQ:316834843
+### 五、社区
+所有修改后的插件配置和 Ubuntu 命令都可以在 Discord 服务器上的 #opensource 频道中获得。
 
-*非常感谢大家！2027 年 6 月，我们高处相见！*
+如果您在玩游戏时遇到任何 Bug 或有反馈，请在此存储库中打开 Issue。
+
+谢谢你！！
