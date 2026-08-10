@@ -78,7 +78,7 @@ Thank YOOOOU!!
 ### 一、废话
 当你看到这个项目时，我已经卸载了QQ和Discord，将计算机上所有与学习无关的文件传输到外部硬盘，并将其交给父母妥善保管。今天是2026年8月9日，离高考还有不到10个月的时间（2027年6月5日）。时间过得真快。我的高中生活很快就要结束了，这让我很伤心 QwQ。
 
-（对于不了解高考的人，你可以把它想象成超过600万学生参加的SAT，纽约时报把它描述为“千军万马过独木桥”一点也不夸张。XD 高考对我来说非常重要——它不仅决定了我能否进入顶尖大学，也决定了我自己和家庭的未来。此外，对我来说，我只有这一次机会。）
+（For those unfamiliar with the Gaokao, you can think of it as an SAT taken by over 600,000 students, the New York Times wasn't exaggerating when it described it as 'thousands of troops crossing a single-log bridge. XD The Gaokao is immensely important to me—it not only determines whether I can get into a top-tier university, but also defines the future of both myself and my family. Plus, for me, I only get one shot at this.)
 
 没有必要详细说明它是多么的关键和重要，这就是为什么我必须在接下来的10个月里暂停所有其他事情，以完全专注于备考。
 我已经暂时将我的所有项目推送到GitHub（包括这一个），以便在高考结束后（2027年6月10日之后）重新开始。
