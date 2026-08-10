@@ -30,6 +30,7 @@ This is a Minecraft Beta 1.7.3 modded server with custom plugins.
     - ① Analyzed the plugins needed for the server (Fig. 2) and got them from bukkit.org. Studied the guides left by each authors and debugged the individual plugins.
     - ② Installed several backported add-ons for IC2. (Ver 1.0.0)
   - **2. August 2**: Launched open beta.
+  - (I rented a cloud server running Ubuntu and connected to it via SSH shell."Back then, I thought SSH was strictly for remote access, just like Windows Remote Desktop. But later, while working with a dictionary pen (YDP031, running Android) (Figure 3), I realized SSH could also connect to a local OS. That's when it clicked for me: SSH is actually a tool for controlling an OS, and can be accessed by any OS. Describing it as a 'shell' is so spot on! XD.This later proved helpful when I was researching iOS downgrades)
 - **(4) 2026**: *(Subsequent updates mostly focused on feature additions and bug fixes. For detailed changes, please refer to #dev-log)*
   - **1. February**:
     - ① Ver 1.1.0 (Since I couldn't find the Randman plugin (which relies on WorldBorder) back in July 2025, I had to generate random coordinates in 'the World' and use the Multiverse-Portals plugin to link 'the Lobby' to those coordinates to simulate random teleportation.)
@@ -95,7 +96,8 @@ Thank YOOOOU!!
   - **1. 7月**：
     - ① 分析服务器所需的插件（图2），并从 bukkit.org 获得它们。研究每个作者留下的指南，并调试各个插件。
     - ② 为 IC2 安装了几个移植版附加模组。（版本1.0.0）
-  - **2. 8月2日**：发布开放测试版。
+  - **2. 8月2日**：公测。
+  - (我租用了一个云服务器 (OS is Ubuntu)，用 SSH shell 连接它"那时以为 SSH 就像 Windows 的远程桌面一样，是专门进行远程访问的。但后来我在研究词典笔 (YDP031, OS is Android) (图3) 时，发现 SSH 还能连接本地的 OS。这让我明白 SSH 其实是一个控制 OS 的工具，任何 OS 都可以用它访问。（用“Shell”形容它太形象了 XD）这为我日后研究 iOS 降级提供了帮助。)
 - **（4）2026年**：*(后续更新主要关注功能添加和错误修复。有关详细更改，请参阅#开发日志)*
   - **1. 2月**：
     - ① 1.1.0版（因为我在2025年7月找不到 Randman 插件（它依赖于 WorldBorder），所以我不得不在“世界”中生成随机坐标，并使用 Multiverse-Portals 插件将“大厅”链接到这些坐标，以模拟随机传送。）
