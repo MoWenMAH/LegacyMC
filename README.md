@@ -32,6 +32,7 @@ This is a Minecraft Beta 1.7.3 modded server with custom plugins,representing fo
     - (Since WorldGuard for Bukkit #1060 wasn't available at the time, and the Permissions plugin could only prevent block destruction globally by revoking the build permission for an entire group, I had to separate 'the World' and 'the Lobby' into two different worlds to protect the lobby).
   - **2. August 2**: Launched open beta.
   - (I rented a cloud server running Ubuntu and connected to it via Xshell."Back then, I thought SSH was strictly for remote access, just like Windows Remote Desktop. But later, while working with a dictionary pen (YDP031, running Android) (Figure 3), I realized SSH could also connect to a local OS. That's when it clicked for me: SSH is actually a tool for controlling an OS, and can be accessed by any OS. Describing it as a 'shell' is so spot on! XD.This later proved helpful when I was researching iOS downgrades)
+  - Thanks to everyone who reported bugs and provided feedback!
   - Ubuntu commands:
   - sudo apt update
   - sudo apt install openjdk-8-jre-headless
@@ -107,6 +108,7 @@ Thank YOOOOU!!
     - （由于当时没有找到worldguard for bukkit1060插件,而permission插件只能通过禁用一个权限组的build权限实现整个世界方块禁止破坏，所以为保护大厅，只能将主世界和大厅分成the World和the Lobby）
   - **2. 8月2日**：公测。
   - (我租用了一个云服务器 (OS is Ubuntu)，用 Xshell 连接它"那时以为 SSH 就像 Windows 的远程桌面一样，是专门进行远程访问的。但后来我在研究词典笔 (YDP031, OS is Android) (图3) 时，发现 SSH 还能连接本地的 OS。这让我明白 SSH 其实是一个控制 OS 的工具，任何 OS 都可以用它访问。（用“Shell”形容它太形象了 XD）这为我日后研究 iOS 降级提供了帮助。)
+  - 感谢所有发现bugs和提出建议的人
   - Ubuntu commands:
   - sudo apt update
   - sudo apt install openjdk-8-jre-headless
