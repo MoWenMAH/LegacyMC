@@ -76,6 +76,7 @@ This is a Minecraft Beta 1.7.3 modded server with custom plugins,representing fo
 All modified plugin configurations are available in the #opensource channel on our Discord server.
 
 If you encounter any bugs or have feedback while playing, please open an issue in this repository.
+
 Discord:https://discord.gg/8urjC42jE3
 
 Thank YOOOOU!!
@@ -151,6 +152,7 @@ Thank YOOOOU!!
 所有修改后的插件配置都可以在 Discord 服务器上的 #opensource 频道中获得。
 
 如果您在玩游戏时遇到任何 Bug 或有反馈，请在此仓库中打开 Issue。
+
 Discord:https://discord.gg/8urjC42jE3
 QQ:316834843
 
