@@ -154,7 +154,8 @@ Thank YOOOOU!!
 如果您在玩游戏时遇到任何 Bug 或有反馈，请在此仓库中打开 Issue。
 
 Discord:https://discord.gg/8urjC42jE3
+
 QQ:316834843
 
 
-谢谢你！！
+Thank YOOOOU!!
