@@ -130,7 +130,7 @@ Thank YOOOOU!!
   - 1. 开始开放测试版
 - **Ver 1.1.0 | 2026年2月**
   - 1. 更改大厅。（链接：https://www.planetminecraft.com/project/castle-38/）
-  - 2. 在https://www.archive.org找到了worldguard for bukkit1060插件，可以实现对一个世界部分区域的保护，因此将大厅与主世界合并。
+  - 2. 在https://www.archive.org  找到了worldguard for bukkit1060插件，可以实现对一个世界部分区域的保护，因此将大厅与主世界合并。
   - 3. 创造了一个名为“Skyland”的新世界，增添玩法 。
   - 4. 增加了 Randman（基于 WorldBorder）插件，用于随机世界传送。
 - **Ver 1.1.1 | 2026年2月**
