@@ -33,11 +33,13 @@ This is a Minecraft Beta 1.7.3 modded server with custom plugins,representing fo
   - **2. August 2**: Launched open beta.
   - (I rented a cloud server running Ubuntu and connected to it via Xshell."Back then, I thought SSH was strictly for remote access, just like Windows Remote Desktop. But later, while working with a dictionary pen (YDP031, running Android) (Figure 3), I realized SSH could also connect to a local OS. That's when it clicked for me: SSH is actually a tool for controlling an OS, and can be accessed by any OS. Describing it as a 'shell' is so spot on! XD.This later proved helpful when I was researching iOS downgrades)
   - Thanks to everyone who reported bugs and provided feedback!
-  - Ubuntu commands:
+```bash
   - sudo apt update
   - sudo apt install openjdk-8-jre-headless
   - cd server
   - screen -S mcs
+```
+
 - **(4) 2026**: *(Subsequent updates mostly focused on feature additions and bug fixes. For detailed changes, please refer to #dev-log)*
   - **1. February**:
     - ① Ver 1.1.0 (Since I couldn't find the Randman plugin (which relies on WorldBorder) back in July 2025, I had to generate random coordinates in 'the World' and use the Multiverse-Portals plugin to link 'the Lobby' to those coordinates to simulate random teleportation.)
@@ -110,11 +112,12 @@ Thank YOOOOU!!
   - **2. 8月2日**：公测。
   - (我租用了一个云服务器 (OS is Ubuntu)，用 Xshell 连接它"那时以为 SSH 就像 Windows 的远程桌面一样，是专门进行远程访问的。但后来我在研究词典笔 (YDP031, OS is Android) (图3) 时，发现 SSH 还能连接本地的 OS。这让我明白 SSH 其实是一个控制 OS 的工具，任何 OS 都可以用它访问。（用“Shell”形容它太形象了 XD）这为我日后研究 iOS 降级提供了帮助。)
   - 感谢所有发现bugs和提出建议的人
-  - Ubuntu commands:
+```bash
   - sudo apt update
   - sudo apt install openjdk-8-jre-headless
   - cd server
   - screen -S mcs
+```
 - **（4）2026年**：*(往后基本都是添加一些新东西和修bugs,所以就不多叙述了，详细内容看dev-log)*
   - **1. 2月**：
     - ① 1.1.0版（(由于2025年七月时没有找到Randman插件(前置Worldborder),所以只能通过随机生成一些the World的坐标，并用插件Multiverse-Portals将the Lobby与这些坐标锚定的方式实现伪随机传送。）
